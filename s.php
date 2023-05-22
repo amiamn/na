@@ -1,6 +1,24 @@
 <?php
 $name = $_POST["name"]; 
+$radio = $_POST["radio"]; 
 
+echo <<< _HTML_
+<!doctype html>
+<html lang="ja">
+<head>
+<title>5/22〆演習</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<ul>
+    <li><a href="form.html">TOP</a></li>
+    <li><a href="pro.html">プロフィール</a></li>
+</ul>
+</nav>
+</body>
+_HTML_;
 $dsn = 'mysql:host=localhost; dbname=php; charset=utf8';
 $user = 'testuser';
 $pass = 'testpass';
@@ -11,9 +29,10 @@ try{
     if ($dbh == null){
     }else{
           
-    $SQL = "insert into phpname(name) values (:name)";
+    $SQL = "insert into php(name,radio) values (:name,:radio)";
     $stmt = $dbh->prepare($SQL);
     $stmt -> bindParam(":name",$name);
+    $stmt -> bindParam(":radio",$radio);
     $stmt -> execute();
 
     echo "登録完了。ありがとうございました";

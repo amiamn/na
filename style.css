@@ -1,14 +1,37 @@
 *{
-    background-color: aqua;
+    background-color: #ffe4c4;
 }        
 
+nav{
+    text-align: center;
+    margin-top: auto;
+    }
+    nav ul{
+    margin: 0;
+    padding: 0 ;
+    }
+    nav li{
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    min-width: 90px;
+    }
+    nav a{
+    text-decoration: none;
+    color: #9f9f9f;
+    font-size: 20px;
+    }
+    nav a:hover{
+        color:#000;
+        border-bottom:2px solid #000;
+        }
 div{
     text-align: center;
-    font-size: 40px;
-    margin-top: 50px;
+    font-size: 30px;
 }
 
 table,
+table th,
 table td
 {
     border: 1px solid #000;
@@ -20,4 +43,18 @@ table td
     position: relative;
     left: 560px;
     top: 115px;
+    background-color: #fff;
 }
+
+.input{
+    background-color: #fff;
+}
+
+.wani {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid green;
+  }
+
