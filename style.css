@@ -1,0 +1,23 @@
+*{
+    background-color: aqua;
+}        
+
+div{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+table,
+table td
+{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+.sosin{
+    position: relative;
+    left: 560px;
+    top: 115px;
+}
