@@ -41,9 +41,10 @@ table td
 
 .sosin{
     position: relative;
-    left: 560px;
+    left: 1090px;
     top: 115px;
     background-color: #fff;
+    font-size: 30px;
 }
 
 .input{
