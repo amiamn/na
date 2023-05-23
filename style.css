@@ -1,6 +1,10 @@
 *{
     background-color: #ffe4c4;
-}        
+}      
+
+h1,h2{
+    text-align: center;
+}
 
 nav{
     text-align: center;
